@@ -1,0 +1,14 @@
+{
+  "name": "html-to-figma",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "figma-plugin"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "build:plugin": "npm run build --workspace=figma-plugin",
+    "build": "npm run build:plugin"
+  }
+}

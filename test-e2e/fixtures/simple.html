@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple Fixture</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #f8fafc; color: #0f172a; }
+  .hero {
+    padding: 40px;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    margin: 24px;
+  }
+  h1 { margin: 0 0 12px; font-size: 32px; }
+  p { margin: 0 0 16px; font-size: 15px; line-height: 1.5; }
+  p .strong { font-weight: 700; color: #fef3c7; }
+  p .em { font-style: italic; text-decoration: underline; }
+  .row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 24px;
+    background: white;
+    margin: 0 24px 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+  }
+  .btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  .btn.primary { background: #2563eb; color: white; }
+  .btn.secondary { background: transparent; color: #2563eb; border: 1px solid #2563eb; }
+  .quote::before { content: "\201C"; font-size: 32px; color: #64748b; margin-right: 8px; vertical-align: top; }
+  .quote {
+    padding: 16px 24px;
+    margin: 0 24px;
+    background: white;
+    border-left: 4px solid #64748b;
+    font-size: 14px;
+    color: #334155;
+  }
+  .hidden { display: none; }
+  .sr-only { position: absolute; left: -9999px; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Hello, Figma.</h1>
+    <p>This fixture exercises <span class="strong">bold text</span> and
+       <span class="em">italic underlined</span> runs inside a single paragraph.</p>
+  </div>
+
+  <div class="row">
+    <button class="btn primary">Primary</button>
+    <button class="btn secondary">Secondary</button>
+    <span style="margin-left: auto; color: #64748b; font-size: 12px;">footer hint</span>
+  </div>
+
+  <div class="quote">An opening quote should appear before this text via ::before.</div>
+
+  <div class="hidden">This should NOT appear in the output.</div>
+  <span class="sr-only">Screen-reader-only content.</span>
+  <script>console.log("should be filtered");</script>
+</body>
+</html>

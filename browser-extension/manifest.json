@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "HTML to Figma Capture",
+  "version": "0.1.0",
+  "description": "Capture the current webpage (including login-protected pages) and send it to the HTML to Figma plugin.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Capture to Figma"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

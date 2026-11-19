@@ -1,0 +1,22 @@
+{
+  "name": "figma-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build --config vite.config.ui.ts && vite build --config vite.config.code.ts",
+    "dev": "vite build --config vite.config.ui.ts --watch"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.100.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vite-plugin-singlefile": "^2.0.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "HTML to Figma",
+  "id": "html-to-figma-local",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/index.html",
+  "editorType": ["figma"],
+  "networkAccess": {
+    "allowedDomains": ["*"],
+    "reasoning": "Fetches the local backend on http://localhost:3333 to scrape webpages, and downloads image assets from arbitrary URLs (img src, background-image, etc.) to turn them into Figma image fills."
+  }
+}
